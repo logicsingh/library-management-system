@@ -19,7 +19,7 @@ PHP 8+, MySQL/MariaDB, PDO, HTML, CSS, Bootstrap 5, Apache/XAMPP.
 2. Start Apache and MySQL in XAMPP.
 3. Open `http://127.0.0.1/phpmyadmin/`.
 4. Use phpMyAdmin's **Import** tab to import `database/schema.sql`, or paste its contents in the SQL tab.
-5. Check `config.php`. It is configured for `127.0.0.1:3307`, database `library_management`, user `root`, blank password. Change `DB_PORT` to `3306` if needed. Never use a blank root password on a public server.
+5. 5. Create `config.php` by copying `config.example.php` in the project root. Set `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, and `DB_PASS` to match your local MySQL configuration. For the default XAMPP setup in this project, the port is `3307`, the database is `library_management`, the user is `root`, and the password is blank. Change the port if your MySQL server uses a different one. Never use a blank root password on a public server.
 6. Open `http://localhost/library-management-system/`.
 
 ## First test
